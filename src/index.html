@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Homework 10</title>
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader is-hidden">Loading data, please wait...</p>
-    <p class="error is-hidden">
-      Oops! Something went wrong! Try reloading the page!
-    </p>
-    <div class="cat-info"></div>
+    <div class="container">
+      <select class="breed-select is-hidden"></select>
+      <div class="wrapper">
+        <p class="loader">
+          Loading data, please wait... <span class="loader-icon"></span>
+        </p>
+        <p class="error is-hidden">
+          Oops! Something went wrong! Try reloading the page!
+        </p>
+      </div>
+      <div class="cat-info"></div>
+    </div>
 
     <script src="js/index.js" type="module"></script>
   </body>
